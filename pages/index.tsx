@@ -1,9 +1,12 @@
 import Link from "next/link";
-import { client } from "../libs/client";
+import { client } from "../lib/client";
+import { Button } from "../components/Button";
+import { ListItem } from "../lib/types";
 
 export default function Home({ blog }) {
   return (
     <div>
+      <Button />
       <ul>
         {blog.map((blog) => (
           <li key={blog.id}>
@@ -18,7 +21,7 @@ export default function Home({ blog }) {
 }
 
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blog" });
+  const data: ListItem = await client.get({ endpoint: "blog" });
 
   return {
     props: {
