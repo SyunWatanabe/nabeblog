@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "tcv": "tailwind-config-viewer -o"
+    "tcv": "tailwind-config-viewer -o",
+    "lint:fix": "eslint --fix './pages/**/*.{js,ts,jsx,tsx}'",
+    "fmt": "prettier --write './'"
   },
   "dependencies": {
     "microcms-js-sdk": "^1.2.0",
