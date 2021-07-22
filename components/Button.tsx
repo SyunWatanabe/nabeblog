@@ -1,4 +1,4 @@
-import { useTheme } from "next-themes";
+import { useTheme } from 'next-themes'
 
 export const Button: React.FC = () => {
   const { theme, setTheme } = useTheme()
@@ -10,7 +10,6 @@ export const Button: React.FC = () => {
         }}
       >
         darkMode
-        The current theme is: {theme}
       </button>
     </>
   )

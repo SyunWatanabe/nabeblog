@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta name="description" content="Hello, World!" />
         </Head>
-        <body className="bg-white dark:bg-gray-800">
+        <body>
           <Main />
           <NextScript />
         </body>
