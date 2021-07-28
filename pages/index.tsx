@@ -1,7 +1,7 @@
-import Link from 'next/link'
-import { client } from '../lib/client'
-import { Button } from '../components/Button'
-import { ListItem } from '../lib/types'
+import Link from 'next/link';
+import { client } from '../lib/client';
+import { Button } from '../components/Button';
+import { ListItem } from '../lib/types';
 
 export default function Home({ blog }) {
   return (
@@ -17,15 +17,15 @@ export default function Home({ blog }) {
         ))}
       </ul>
     </div>
-  )
+  );
 }
 
 export const getStaticProps = async () => {
-  const data: ListItem = await client.get({ endpoint: 'blog' })
+  const data: ListItem = await client.get({ endpoint: 'blog' });
 
   return {
     props: {
       blog: data.contents,
     },
-  }
-}
+  };
+};

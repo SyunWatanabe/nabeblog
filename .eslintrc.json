@@ -33,7 +33,7 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "prettier/prettier": [2, { "singleQuote": true, "semi": false }],
+    "prettier/prettier": [2, { "singleQuote": true, "semi": true }],
     "react/react-in-jsx-scope": 0,
     "react/display-name": 0,
     "react/prop-types": 0,
