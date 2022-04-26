@@ -9,18 +9,7 @@ export default {
     type: 'website',
     images: [
       {
-        url: 'http://via.placeholder.com/350x150',
-        width: 800,
-        height: 600,
-        alt: 'Og Image Alt',
-        type: 'image/jpeg',
-      },
-      {
-        url: 'http://via.placeholder.com/350x150',
-        width: 900,
-        height: 800,
-        alt: 'Og Image Alt Second',
-        type: 'image/jpeg',
+        url: 'https://placehold.jp/2400x1260.png',
       },
     ],
   },
